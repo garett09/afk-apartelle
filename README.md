@@ -1,13 +1,13 @@
 # AFK Apartelle
 
-Our complete AFK apartelle website maintained by: **Adrian Sian
+Our complete AFK apartelle website maintained by: ****Adrian Sian**
 
 ### The contributions are as follows:
 
-- **The design, logo and content are orignally made by: **Catherine Bautista, Nikka Francisco, Annie Icban, and Mylene Ong.
-- **HTML and Boostrap made by Aaron Mayor and Eduardo Nacion
-- **Javascript includes form validation, textbox, and prompts are made by Kyle Ong, and Adrian Sian
-- **PHP for login are made by **Carlos Pineda, Karlo Tuazon and Sean Harris Bautista and Rhovic Cabugao.
+- **The design, logo and content** are orignally made by: _Catherine Bautista, Nikka Francisco, Annie Icban, and Mylene Ong._
+- **HTML and Boostrap** made by _Aaron Mayor and Eduardo Nacion._
+- **Javascript** includes form validation, textbox, and prompts are made by _Kyle Ong, and Adrian Sian._
+- **PHP for login** are made by _Carlos Pineda, Karlo Tuazon and Sean Harris Bautista and Rhovic Cabugao_.
 
 ## Changelog
 
@@ -19,4 +19,4 @@ they will be greeted by a message.
 
 ## Authors
 
-This website is made by Sean Harris Bautista ,Catherine Bautista, Rhovic Cabugao, Kyle Bryan Ong, Adrian Garett Sian, Eduardo Nacion, Aaron Mayor, Nikka Piel Francisco, Annie Icban, Karlo Tuazon, Carlos Pineda.
+This website is made by **Sean Harris Bautista ,Catherine Bautista, Rhovic Cabugao, Kyle Bryan Ong, Adrian Garett Sian, Eduardo Nacion, Aaron Mayor, Nikka Piel Francisco, Annie Icban, Karlo Tuazon, Carlos Pineda.**
