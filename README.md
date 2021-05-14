@@ -1,6 +1,6 @@
 # AFK Apartelle
 
-Our complete AFK apartelle website maintained by: ****Adrian Sian**
+Our complete AFK apartelle website maintained by: **Adrian Sian**
 
 ### The contributions are as follows:
 
