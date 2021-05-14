@@ -18,10 +18,9 @@
     ></script>
   </head>
   <body>
-    <php
-
-    echo "there heroku"
-    ?></php>
+    <?php
+    echo "My first PHP script!";
+    ?>
     <div class="jumbotron">
         <h1 class="display-4 bg-danger">Hello, world!</h1>
         <p class="lead bg-info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
