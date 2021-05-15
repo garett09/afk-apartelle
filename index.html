@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFK Apartelle</title>
+    <!-- Bootstrap LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!--angular js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope) {
+        $scope.firstname = "John";
+        $scope.lastname = "Doe";
+        $scope.Carousel = [
+          { URL: "www.google.com", filename: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" , class:"carousel-item active"},
+          { URL: "www.yahoo.com", filename: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg", class: "carousel-item" },
+        ];
+
+        $scope.people ={name:'', email:''};
+        $scope.registered =[];
+
+
+
+        $scope.save = function(){
+
+          
+          $scope.registered.push($scope.people);
+        }
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container" ng-app="myApp" ng-controller="myCtrl">
+      <form novalidate autocomplete="off">
+        <div class="container">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm"> <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  ng-model="people.name"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  ></small
+                >
+
+
+
+              </div>
+              <div class="col-sm"><p ng-bind="people.name"></p></div>
+              <div class="col-sm">One of three columns</div>
+            </div>
+           
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+              ng-model="people.email"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary" ng-click="save()">Submit</button>
+        </div>
+      </form>
+     
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">URL</th>
+            <th scope="col">filename</th>           
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in Carousel"> 
+            
+            <td>{{ row.URL}}</td>
+            <td>{{ row.filename }}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div ng-class="carousel-item active" ></div>
+            <img class="d-block w-100" ng-src={{row.filename}} alt="First slide">
+          </div>
+          
+        </div>
+      </div>
+      
+
+    </div>
+  </body>
+</html>
