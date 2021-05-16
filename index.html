@@ -31,7 +31,7 @@
     <!--angular js-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script>
-      var app = angular.module("myApp", []);
+        var app = angular.module("myApp", []);
       app.controller("myCtrl", function ($scope) {
         $scope.Carousel = [
           {
@@ -49,6 +49,15 @@
         ];
 
         $scope.people = { firstName: "", lastName: "", email: "", password: "", phoneNumber: ""};
+        $scope.roomsRegistered = [
+        {roomcode: 1, roomName : "Bohol", roomPrice: 7800.00, maxNumberofGuests: 2, description: "1 Queen size bed"},
+        {roomcode: 2, roomName : "Vigan", roomPrice: 8200.00, maxNumberofGuests: 3, description: "1 Queen size bed and 1 single bed"},
+        {roomcode: 3, roomName : "Cebu", roomPrice: 9000.00, maxNumberofGuests: 4, description: "2 Queen size bed"},
+        {roomcode: 4, roomName : "Siargao", roomPrice: 10000.00, maxNumberofGuests: 2, description: "Deluxe room - King size bed"},
+        {roomcode: 5, roomName : "Coron", roomPrice: 11000.00, maxNumberofGuests: 4, description: "With mini kitchen and 2 queen size bed"},
+        {roomcode: 6, roomName : "Manila", roomPrice: 15000.00, maxNumberofGuests: 8, description: "Penthouse - 3 bedrooms with kitchen"},
+      ];
+        $scope.selectedRoom = 1;
         $scope.registered = [];
 
         $scope.save = function () {
@@ -75,7 +84,6 @@
                   placeholder="Enter first name"
                   ng-model="people.firstName"
                 />
-                <small id="emailHelp" class="form-text text-muted"></small>
               </div>
               <div class="col-sm-6">
                 <label for="lastNameForms">Last name</label>
@@ -87,7 +95,6 @@
                   placeholder="Enter last name"
                   ng-model="people.lastName"
                 />
-                <small id="emailHelp" class="form-text text-muted"></small>
               </div>
               <div class="col-sm-6">
                 <label for="lastNameForms">E-mail</label>
@@ -113,15 +120,17 @@
               </div>
             
             <div class="col-sm-6 ">
-              <label for="sel1">Select list:</label>
-              <select class="form-control" id="sel1">
-                <option>BOHOL</option>
-                <option>VIGAN</option>
-                <option>CEBU</option>
-                <option>SIARGAO</option>
-                <option>CORON</option>
-                <option>MANILA</option>
+              <label for="sel1">Room type:</label>
+                <select ng-options="room.roomcode as room.roomName for room in roomsRegistered" ng-model="selectedRoom" class="form-control"
+                id="roomsSelect1"></select>
               </select>
+              <!--<h1>You selected a {{selectedRoom.roomName}} that is priced {{selectedRoom.roomPrice}}</h1> -->
+            </div>
+
+            <div class="col-sm-6">
+              <label for="example-datetime-local-input">Date and time</label>
+                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+              </div>
             </div>
           </div>
          
