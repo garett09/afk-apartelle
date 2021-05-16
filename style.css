@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+/*Header*/
+header .container-fluid{
+    background: #ebcc90;
+    font-weight: bold;
+    padding-top: 1rem;
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin: 0;
+    overflow-x: hidden;
+    left: 0;
+}
+.container-fluid .navbar-expand-lg .navbar-light .nav-link {
+    padding-right: 3.5rem;
+    padding-left: 1.5rem;
+}
+.navbar-toggler{
+    background: black;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+/*Body*/
+.mx-auto-blockquote{
+    font-family: 'Belleza', sans-serif;
+    color: #b68911;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
