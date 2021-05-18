@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html ng-app>
+    <head>
+            <title> Practice JS </title>
+            <link href = "practice.css" rel = "stylesheet" type = "text/css" />
+            <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
+    </head>
+
+    <body>
+        <center>
+        <form name="contactform">
+            <div class = "ContactUs Title">
+                <h2> Contact Us </h2>
+            </div>
+            <table border="0">
+            
+            <tr><td><label for "name">Name: </Label></tr></td>
+            <tr><td><input type="text" id="Fname" name="Fname" ng-required= "true"ng-model="contact.Fname" placeholder="Firstname">
+            <input type="text" id="Lname" name="Lname"ng-required= "true" ng-model="contact.Lname" placeholder="Lastname"></tr></td>
+            <tr><td>
+            <div ng-show = "contactform.Fname.$touched && contactform.Fname.$invalid">
+              <small style =" color:red; display: block; text-align: center;">Please enter your First Name</small>
+            </div>
+            
+            <div ng-show = "contactform.Lname.$touched && contactform.Lname.$invalid">
+              <small style =" color:red; display: block; text-align: center;">Please enter your Last Name</small>
+            </div>
+            
+            
+            </tr></td>
+            
+            <tr><td><label for "email">Email: </Label></tr></td>
+            <tr><td><input type="text" id="email" name="email" ng-required= "true" ng-model="contact.email" placeholder="Enter Email">
+              <div ng-show = "contactform.email.$touched && contactform.email.$invalid">
+                <small style =" color:red; display: block; text-align: center;">Please enter your Email</small>
+              </div>
+            </tr></td>
+            
+            <tr><td><label for "msg">Message:</label></lbl></td></tr>
+            <tr><td><textarea id="msg" name="msg" ng-required= "true" ng-model="contact.msg" placeholder="Message" style="width:100%;height:160px;"> </textarea>
+              <div ng-show = "contactform.msg.$touched && contactform.msg.$invalid">
+                <small style =" color:red; display: block; text-align: center;">Please enter a Message</small>
+              </div>
+            </td></tr>
+            
+            <tr><td colspan="2" align="right"> 
+
+            <span><input type="submit" class = "Animation" value="Send" style = "float:right"> </span>
+            
+            
+             </td></tr> 
+            
+            </table>
+            </div>
+        </form>
+        </center>
+    </body>
+</html>

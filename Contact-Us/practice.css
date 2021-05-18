@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+input.ng-invalid.ng-touched,textarea.invalid.ng-touched
+    {
+        border: 2px solid red;
+    }
+.Animation 
+    {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #ebcc90;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        font-family: 'Poppins';
+    }
+
+.Animation:hover 
+    {
+        display: inline-block;
+        border-radius: 4px;
+        background-color:#d4b982 ;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 110px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        font-family: 'Poppins';
+    }
+  
+body 
+    {
+        font-family: 'Poppins';
+    }
+
+#Fname, #Lname, #email, #msg
+    {
+        font-size: 16px;
+        font-family: 'Poppins';
+    }
+
