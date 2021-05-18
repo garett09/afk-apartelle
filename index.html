@@ -7,12 +7,7 @@
     <title>AFK Apartelle</title>
     <link rel="stylesheet" href="css/sample.css" />
     <!-- Bootstrap LINKS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -30,6 +25,7 @@
     ></script>
     <!--angular js-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/sample.js"></script>
     <script>
       var app = angular.module("myApp", []);
       app.controller("myCtrl", function ($scope) {
@@ -48,7 +44,7 @@
           },
         ];
 
-        $scope.people = { firstName: "", lastName: "", email: "", password: "", phoneNumber: ""};
+        $scope.people = { firstName: "", lastName: "", email: "", password: "", phoneNumber: "", checkinDate: null, checkoutDate: null};
         $scope.roomsRegistered = [
         {roomcode: 1, roomName : "Bohol", roomPrice: 7800.00, maxNumberofGuests: 2, description: "1 Queen size bed"},
         {roomcode: 2, roomName : "Vigan", roomPrice: 8200.00, maxNumberofGuests: 3, description: "1 Queen size bed and 1 single bed"},
@@ -84,6 +80,9 @@
                   placeholder="Enter first name"
                   ng-model="people.firstName"
                 />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
               <div class="col-sm-6">
                 <label for="lastNameForms">Last name</label>
@@ -116,22 +115,42 @@
                   aria-describedby="phoneHelp"
                   placeholder="Enter your phone number"
                   ng-model="people.phoneNumber"
+                  required
                 />
               </div>
             
             <div class="col-sm-6 ">
               <label for="sel1">Room type:</label>
                 <select ng-options="room.roomcode as room.roomName for room in roomsRegistered" ng-model="selectedRoom" class="form-control"
-                id="roomsSelect1"></select>
+                id="roomsSelect1" required></select>
               </select>
               <!--<h1>You selected a {{selectedRoom.roomName}} that is priced {{selectedRoom.roomPrice}}</h1> -->
             </div>
+            <div class="col-sm-6">
+              <label for="inputState">Number of Guests</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+
+              </select>
+            </div>
 
             <div class="col-sm-6">
-              <label for="example-datetime-local-input">Date and time</label>
-                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+              <label for="checkindatee">Checkin date</label>
+                <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="example-datetime-local-input" ng-model="people.checkinDate">
               </div>
-            </div>
+            <div class="col-sm-6">
+              <label for="checkoutDatee">Checkout date</label>
+                <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="example-datetime-local-input" ng-model="people.checkoutDate">
+              </div>
+              
           </div>
          
           <div class="form-check">
