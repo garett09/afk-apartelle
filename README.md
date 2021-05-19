@@ -1,4 +1,4 @@
-# AFK Apartelle
+# AFK Apartelle by Sani's Babies
 
 Our complete AFK apartelle website maintained by: **Adrian Sian**
 
@@ -10,6 +10,8 @@ Our complete AFK apartelle website maintained by: **Adrian Sian**
 - **Javascript, AngularJS, and jQuery** includes form validation, textbox, data binding, data handling, and prompts are made by _Kyle Ong, Carlos Pineda, Sean Bautista, Karlo Tuazon, Rhovic Cabugao and, Adrian Sian._
 
 ## Changelog
+- On 20 May 2021, The vanilla booking form is 100% finished. Mr. Nacion will now integrate the vanilla booking form to the booking.html. He also fixed the carousel bug issue when using a mobile phone. The** DLC** or known as _design, logo, and content_ team also resized all the picture to make them fit in the carousel.
+
 - On 19 May 2021, The booking form is 80% finished. It still needs some validation and layouting.
 
 - On 18 May 2021, 70% of the entire project is finished thanks to the **front-end developer** _Aaron Mayor_ and **Quality Assurance Officer** _Eduardo Nacion_. Mostly the code has been further optimized by Mr. Nacion. In addition, the **Javascript, AngularJS, and jQuery** team further makes their code more optimized and better. Team members: _Kyle Ong, Carlos Pineda, Sean Bautista, Karlo Tuazon, Rhovic Cabugao_ are assigned to create the contact us form with AngularJS, and JavaScript. While, _Adrian Sian_ is tasked to finish the booking form with the same language as the other team members on the Javascript team.
