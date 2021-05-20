@@ -5,7 +5,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>AFK Apartelle</title>
-      <link rel="stylesheet" href="style.css" >
+      <link rel="icon" href="img/icon.png">
+      <link rel="stylesheet" href="css/style.css" >
       <!-- Bootstrap LINKS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
@@ -27,6 +28,10 @@
          ></script>
       <!--angular js-->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+      <!-- Font Awesome -->
+      <script
+         src="https://kit.fontawesome.com/2ddbad06a5.js"
+         crossorigin="anonymous"></script>
       <script>
          var app = angular.module("myApp", []);
          app.controller("myCtrl", function ($scope) {
@@ -44,7 +49,6 @@
          $scope.registered = [];
          $scope.addtocart  = function (room) {
             if (room.selected===true){
-             //alert(room.selected);
                $scope.roomcart.push(room);
          }  else {
                 $scope.roomcart.splice($scope.roomcart.indexOf(room),1);
@@ -66,230 +70,208 @@
       </script>
    </head>
    <body>
-    <div class = "title">
-        <h1>AFK Hotel Booking Forms<h1>
-        </div>
-    <main class ="pt-5 pb-5">
-      <div class="container" ng-app="myApp" ng-controller="myCtrl">
+      <div class="title">
+         <h1>
+         AFK Hotel Booking Forms
+         <h1>
+      </div>
+      <main class ="pt-5 pb-5">
+         <div class="container" ng-app="myApp" ng-controller="myCtrl">
          <form class="needs-validation" novalidate autocomplete="off" id="registeredform" name="myForm">
             <div class="container">
-               <div class="form-group">
-                  <div class="row">
-                     <div class="col-sm-6">
-                        <label for="exampleInputEmail1">First name</label>
-                        <input
-                           type="text"
-                           class="form-control"
-                           id="firstNameForms"
-                           aria-describedby="fnameHelp"
-                           placeholder="Enter first name"
-                           ng-model="people.firstName"
-                           required
-                           />
-                        <div class="valid-feedback">
-                           Looks good bro!
-                        </div>
-                        <div class="invalid-feedback">
-                           Hey, don’t forget about this!
-                        </div>
+            <div class="form-group">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <label for="exampleInputEmail1">First name</label>
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="firstNameForms"
+                        aria-describedby="fnameHelp"
+                        placeholder="Enter first name"
+                        ng-model="people.firstName"
+                        required
+                        />
+                     <div class="valid-feedback">
+                        Looks good bro!
                      </div>
-                     <div class="col-sm-6">
-                        <label for="lastNameForms">Last name</label>
-                        <input
-                           type="text"
-                           class="form-control"
-                           id="lastNameForms"
-                           aria-describedby="lnameHelp"
-                           placeholder="Enter last name"
-                           ng-model="people.lastName"
-                           required
-                           />
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           Wait! You forgot this one.
-                        </div>
-                     </div>
-                     <div class="col-sm-6" ng-class="{'has-error': myForm.email.$invalid}">
-                        <label for="lastNameForms">E-mail</label>
-                        <input
-                           type="email"
-                           class="form-control"
-                           name="name"
-                           aria-describedby="emailHelp"
-                           placeholder="Enter your desired email"
-                           ng-model="people.email"
-                           required
-                           />
-                        <div class="valid-feedback">
-                           Nice it's perfect!
-                        </div>
-                        <div class="invalid-feedback">
-                           Hey, please fix email plz.
-                        </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <label for="lastNameForms">Phone number</label>
-                        <input
-                           type="number"
-                           class="form-control"
-                           id="phonenumberForms"
-                           aria-describedby="phoneHelp"
-                           placeholder="Enter your phone number"
-                           ng-model="people.phoneNumber"
-                           required
-                           />
-                        <div class="valid-feedback">
-                           Awesome job.
-                        </div>
-                        <div class="invalid-feedback">
-                           Bro, please input your cellphone number, bro.
-                        </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <label for="checkindatee">Check-in date</label>
-                        <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="example-datetime-local-input" ng-model="people.checkinDate" required>
-                        <div class="valid-feedback">
-                           Nice one.
-                        </div>
-                        <div class="invalid-feedback">
-                           Hi, invalid date kindly correct thx.
-                        </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <label for="checkoutDatee">Check-out date</label>
-                        <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="example-datetime-local-input" ng-model="people.checkoutDate" required>
-                        <div class="valid-feedback">
-                           Galing dude pare chong.
-                        </div>
-                        <div class="invalid-feedback">
-                           Hoy, kindly change to your checkout date as you forgot to change.
-                        </div>
+                     <div class="invalid-feedback">
+                        Hey, don’t forget about this!
                      </div>
                   </div>
-                  &nbsp;
-                  <button class="btn btn-info float-sm-right mt-3 mb-3 mr-4" type="submit" id="btnsubmit">Verify</button>
+                  <div class="col-sm-6">
+                     <label for="lastNameForms">Last name</label>
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="lastNameForms"
+                        aria-describedby="lnameHelp"
+                        placeholder="Enter last name"
+                        ng-model="people.lastName"
+                        required
+                        />
+                     <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                     <div class="invalid-feedback">
+                        Wait! You forgot this one.
+                     </div>
+                  </div>
+                  <div class="col-sm-6" ng-class="{'has-error': myForm.email.$invalid}">
+                     <label for="lastNameForms">E-mail</label>
+                     <input
+                        type="email"
+                        class="form-control"
+                        name="name"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter your desired email"
+                        ng-model="people.email"
+                        required
+                        />
+                     <div class="valid-feedback">
+                        Nice it's perfect!
+                     </div>
+                     <div class="invalid-feedback">
+                        Hey, please fix email plz.
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <label for="lastNameForms">Phone number</label>
+                     <input
+                        type="number"
+                        class="form-control"
+                        id="phonenumberForms"
+                        aria-describedby="phoneHelp"
+                        placeholder="Enter your phone number"
+                        ng-model="people.phoneNumber"
+                        required
+                        />
+                     <div class="valid-feedback">
+                        Awesome job.
+                     </div>
+                     <div class="invalid-feedback">
+                        Bro, please input your cellphone number, bro.
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <label for="checkindatee">Check-in date</label>
+                     <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="checkindate-input" ng-model="people.checkinDate" required>
+                     <div class="valid-feedback">
+                        Bro, galing mo.
+                     </div>
+                     <div class="invalid-feedback">
+                        Hi, you forgot this, kindly correct thx.
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <label for="checkoutDatee">Check-out date</label>
+                     <input class="form-control" type="date" placeholder="MM/DD/YYYY" id="checkout-date-input" ng-model="people.checkoutDate" required>
+                     <div class="valid-feedback">
+                        Galing dude pare chong.
+                     </div>
+                     <div class="invalid-feedback">
+                        Hoy, kindly change to your checkout date as you forgot to change.
+                     </div>
+                  </div>
+               </div>
+               &nbsp;
+               <button class="btn btn-info float-sm-right mt-3 mb-3 mr-4" type="submit" id="btnsubmit">Verify</button>
          </form>
          &nbsp
          <h3>Select your room</h3>
          <table class="table col-sm-12">
          <thead>
          <tr>
-            <th scope="col">Select</th>
-            <th scope="col">Room Name</th>
-            <th scope="col" style="text-align:center">Description</th>
-            <th scope="col">Guests allowed</th>
-            <th scope="col">Price</th>
+         <th scope="col">Select</th>
+         <th scope="col">Room Name</th>
+         <th scope="col" style="text-align:center">Description</th>
+         <th scope="col">Guests allowed</th>
+         <th scope="col">Price</th>
          </tr>
          </thead>
          <tbody>
          <tr ng-repeat="room in roomsRegistered">
-            <td><input type="checkbox" ng-checked="all" ng-model="room.selected" ng-change ="addtocart(room)"></td>
-            <td>{{ room.roomName}}</td>				
-            <td>{{room.description}}</td>
-            <td>{{room. maxNumberofGuests}}</td>
-            <td>₱{{ room.roomPrice}}</td>
-            </tr>
+         <td><input type="checkbox" ng-checked="all" ng-model="room.selected" ng-change ="addtocart(room)"></td>
+         <td>{{ room.roomName}}</td>				
+         <td>{{room.description}}</td>
+         <td>{{room. maxNumberofGuests}}</td>
+         <td>₱{{ room.roomPrice}}</td>
+         </tr>
          </tbody>
          <tfoot>
          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class = "font-weight-bold">Total</td>
-            <td class = "font-weight-bold">₱{{people.totalPrice}}</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class = "font-weight-bold">Total</td>
+         <td class = "font-weight-bold">₱{{people.totalPrice}}</td>
          </tr>
          </tfoot>
          </table>
          </div>
          <button class="btn btn-primary float-right" type="submit" id="btnsubmit" ng-click="save()">Submit form</button>
          <button class="btn btn-danger float-right mr-5" type="reset" id="btnsubmit" ng-click="clear()">Clear form</button>
-        </main>
-         <footer>
-            <div class="page-footer col-sm-12 font-small indigo">
+      </main>
+      <footer>
+         <div class="page-footer col-sm-12 font-small indigo">
             <div class="container">
-              <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-        
-                <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="index.html">Home</a>
-                  </h6>
-                </div>
-  
-                <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="aboutus.html">About</a>
-                  </h6>
-                </div>
-  
-                <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="booking.html">BOOKINGS</a>
-                  </h6>
-                </div>
-  
-                <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">CONTACT US</a>
-                  </h6>
-                </div>
-  
-        
-              </div>
-              
-  
-              <hr class="rgba-white-light" style="margin: 0 15%;">
-        
-  
-              <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-        
-                <br>
-                <br>
-        
-              </div>
-  
-        
-              <div class="row mx-auto">
-        
-                <div class="btn-group-horizontal mx-auto ">
-        
-                  <div class="mx-5 flex-center">
-        
-                    <!-- Facebook -->
-                    <a class="fb-ic">
-                      <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="tw-ic">
-                      <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-                    </a>
-                   
-                    <!--Instagram-->
-                    <a class="ins-ic">
-                      <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-                    </a>
-                    <!--Email-->
-                    <a class="pin-ic">
-                      <i class="fas fa-envelope fa-lg white-text"></i>
-                    </a>
-                   
+               <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html">Home</a>
+                     </h6>
                   </div>
-                </div>
-        
-              </div>
-        
-              <br>
-              <br>
-  
-        
-              <!-- Copyright -->
-              <div class="footer-copyright text-center py-3">© 2021 AFK Hotel Developed by 2ISA. All Rights Reserved:</div>
-              <!-- Copyright -->
-              </div>
-              </div>
-        
-          </footer>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="aboutus.html">About</a>
+                     </h6>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="booking.html">BOOKINGS</a>
+                     </h6>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">CONTACT US</a>
+                     </h6>
+                  </div>
+               </div>
+               <hr class="rgba-white-light" style="margin: 0 15%;">
+               <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                  <br>
+                  <br>
+               </div>
+               <div class="row mx-auto">
+                  <div class="btn-group-horizontal mx-auto ">
+                     <div class="mx-5 flex-center">
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                        </a>
+                        <!--Email-->
+                        <a class="pin-ic">
+                        <i class="fas fa-envelope fa-lg white-text"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <!-- Copyright -->
+               <div class="footer-copyright text-center py-3">© 2021 AFK Hotel Developed by Sani's Babies. All Rights Reserved:</div>
+               <!-- Copyright -->
+            </div>
+         </div>
+      </footer>
    </body>
    <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
