@@ -29,4 +29,4 @@ they will be greeted by a message. Lastly, another environment was added to acco
 
 ## Authors
 
-This website is made by **Sean Harris Bautista ,Catherine Bautista, Rhovic Christopher Cabugao, Kyle Bryan Ong, Adrian Garett Sian, Eduardo Gabriel Nacion, Aaron Karl Mayor, Nikka Piel Francisco, Annie Mae Icban, Karlo Tuazon, Carlos Miguel Pineda.**
+The website is made by **Sean Harris Bautista ,Catherine Bautista, Rhovic Christopher Cabugao, Kyle Bryan Ong, Adrian Garett Sian, Eduardo Gabriel Nacion, Aaron Karl Mayor, Nikka Piel Francisco, Annie Mae Icban, Karlo Tuazon, Carlos Miguel Pineda.**
