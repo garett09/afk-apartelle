@@ -93,6 +93,17 @@ main .container-fluid2 .image .text2 {
   font-size: 3vw;
   font-family: "Quicksand", sans-serif;
 }
+main .carousel-text-rooms2 {
+  font-size: 5vw;
+  font-family: "Belleza", sans-serif;
+  text-shadow: 0 0 9px grey, 0 0 10px grey;
+  color:white;
+}
+.mx-auto-blockquote1 {
+  color:#212529;
+  text-align: center;
+  justify-content: center;
+}
 
 /*FOOTER*/
 footer {
@@ -187,10 +198,7 @@ main .carousel-desc-rooms {
   text-shadow: 0 0 9px grey, 0 0 10px grey;
   bottom: 30% !important;
 }
-main .carousel-text {
-  font-size: 50px;
-  font-family: "Belleza", sans-serif;
-}
+
 /*footer*/
 footer .page-footer {
   background: #ebcc90;
