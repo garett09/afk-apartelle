@@ -8,6 +8,8 @@
       <script data-semver="1.8.2" src="https://code.angularjs.org/1.8.2/angular.js" data-require="angular.js@1.8.x"></script>
       <script src="https://code.angularjs.org/1.8.2/angular-route.js"></script>
       <!-- Bootstrap CSS -->
+      <link href= "css/style.css" rel="stylesheet" type="text/css">
+      <link href= "css/contactus.css" rel="stylesheet" type="text/css">
       <!----> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
       <!--Bootstrap JS-->
@@ -17,43 +19,61 @@
       <!--Angular JS-->
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
       <script src = contact-us_controller.js></script>
+       <!-- Font Awesome -->
+       <script
+       src="https://kit.fontawesome.com/2ddbad06a5.js"
+       crossorigin="anonymous"
+       ></script>
   </head>
 
   <body ng-app="datashare">
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto">
-                      <li class ="nav-item active">
-                        <a class="nav-link" href="index.html" >HOME</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class = "nav-link" href="#">ABOUT</a>
-                      </li>
-                      <li class= "nav-item active">
-                        <a class="nav-link" href="booking.html">BOOKING</a>
-                      </li>
-                      <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          SERVICES
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Rooms</a>
-                          <a class="dropdown-item" href="#">Facilities</a>
-                          <a class="dropdown-item" href="#">Events</a>
-                          </div>
-                        </li>
-                        <li class="nav-item active">
-                        <a class="nav-link" href="Contact_us.html">CONTACT US</a>
-                        </li>
-                      </ul>
-                    </div>
-                </nav>
-            </div>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="aboutus.html">ABOUT</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="booking.html">BOOKING</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  SERVICES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="rooms.html">Rooms</a>
+                  <a class="dropdown-item" href="facilities.html">Facilities</a>
+                  <a class="dropdown-item" href="events.html">Events</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Contact_us.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <h1 id = "Thanks"><center> Thank You! </center></h1>
 	
@@ -63,7 +83,79 @@
 			<center><img src="img/LOGO.png" alt="JFK Apartelle Logo" width=20% height=20%></center>
 			<h3><center><p>We have received your feedback and we will contact you as soon as possible.</p></center></h3>
 		</div>
+    <footer>
+    <div class="page-footer col-sm-12 font-small indigo">
+      <div class="container">
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="index.html">Home</a>
+            </h6>
+          </div>
 
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="aboutus.html">About</a>
+            </h6>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="booking.html">BOOKINGS</a>
+            </h6>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="Contact_us.html">CONTACT US</a>
+            </h6>
+          </div>
+        </div>
+
+        <hr class="rgba-white-light" style="margin: 0 15%" />
+
+        <div
+          class="row d-flex text-center justify-content-center mb-md-0 mb-4"
+        >
+          <br />
+          <br />
+        </div>
+
+        <div class="row mx-auto">
+          <div class="btn-group-horizontal mx-auto">
+            <div class="mx-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+              </a>
+
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Email-->
+              <a class="pin-ic">
+                <i class="fas fa-envelope fa-lg white-text"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2021 AFK Hotel Developed by Sani's Babies. All Rights Reserved:
+        </div>
+        <!-- Copyright -->
+      </div>
+    </div>
+  </footer>
   </body>
 
 </html>
