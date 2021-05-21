@@ -90,3 +90,21 @@ body
 	{		
 		padding-top: 5%;
 	}
+.contact-us{
+    background-color: #d4b982;
+    text-align: center;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.contact-us a{
+    color:black;
+    font-family: "Belleza", sans-serif;
+    font-size: 30px;
+    padding-left: 1rem;
+    justify-content: center;
+}
+i{
+    padding-left: 2rem;
+    font-size: 30px;
+    padding-left: 2rem;
+}
