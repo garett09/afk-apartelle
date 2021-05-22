@@ -149,14 +149,13 @@ header .title h1 {
   padding-bottom: 1.75rem;
 }
 /*FOOTER*/
-footer .page-footer3 {
+footer .page-footer {
   background: #ebcc90;
-  padding-top: 2rem;
 }
-footer .container4 a {
+footer .container a {
   color: black;
 }
-footer .container4 a:hover {
+footer .container a:hover {
   color: white;
   text-decoration: none;
 }

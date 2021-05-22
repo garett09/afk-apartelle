@@ -19,14 +19,13 @@ app.controller("ContactCtrl", function($scope, srvShareData, $location) {
 
   $scope.shareMyData = function(Finame, Laname, Elmail, Mesge) {
 
-    if(Finame!= null && Laname!= null && Elmail!= null && Mesge!= null){
+   
       $scope.fullName=  Finame + " " + Laname;
       //send scopes to the share data service
       srvShareData.addData($scope.fullName);
       //sends the confirmation page route
       window.location.href = "Confirmation_Contact_Us.html";
 
-    }
 
   }
 });

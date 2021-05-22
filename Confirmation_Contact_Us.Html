@@ -85,16 +85,21 @@
          </div>
       </div>
    </header>
-    <main>
-    <h1 id = "Thanks" class = "pt-5"><center> Thank You! </center></h1>
-	
-		<!-- inputted data -->
-		<div ng-controller="ConfirmationCtrl">
-			<h3><center><p ng-bind = "sharedData" style="text-transform:capitalize"></p></center></h3>
-			<center><img src="img/LOGO.png" class ="img-fluid d-block rounded mx-auto " alt="LOGO"></center>
-			<h3><center><p>We have received your feedback and we will contact you as soon as possible.</p></center></h3>
-		</div>
-    </main>
+   <main>
+    <div class="container px-4">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="mx-auto-blockquote1 d-flex justify-content-center"> Thank You! </h1>
+          <!-- inputted data -->
+          <div ng-controller="ConfirmationCtrl">
+            <h3><p ng-bind = "sharedData" class="mx-auto-blockquote1 d-flex justify-content-center" style="text-transform:capitalize"></p></h3>
+            <img src="img/LOGO.png" class ="img-fluid d-block rounded mx-auto " alt="hotel logo - rectangular shape with gold border and text">
+            <h3 class="mx-auto-blockquote1 d-flex justify-content-center"><p>We have received your feedback and we will contact you as soon as possible.</p></h3>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </main>
     <footer>
     <div class="page-footer col-sm-12 font-small indigo">
       <div class="container">
