@@ -17,6 +17,14 @@ body {
 
 /*INDEX WEBPAGE*/
 /*HEADER*/
+header a{
+  text-decoration: none;
+  color:#212529;
+}
+header a:hover{
+  text-decoration: none;
+  color:#212529
+}
 header .container-fluid {
   background: #ebcc90;
   font-weight: bold;
@@ -124,9 +132,9 @@ footer .container a:hover {
 
 /*BOOKING WEBPAGE*/
 .title {
-  background: #ebcc90;
+  background:white;
   font-weight: bold;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   font-family: "Poppins";
   font-size: 30px;
@@ -141,13 +149,14 @@ header .title h1 {
   padding-bottom: 1.75rem;
 }
 /*FOOTER*/
-footer .page-footer {
+footer .page-footer3 {
   background: #ebcc90;
+  padding-top: 2rem;
 }
-footer .container a {
+footer .container4 a {
   color: black;
 }
-footer .container a:hover {
+footer .container4 a:hover {
   color: white;
   text-decoration: none;
 }
@@ -214,7 +223,7 @@ footer .container a:hover {
 
 /*ABOUT US WEBPAGE*/
 /*HEADER*/
-header .title-aboutus h1 {
+.title-aboutus h1 {
   text-align: center;
   font-family: "Belleza", sans-serif;
   padding-top: 2rem;
