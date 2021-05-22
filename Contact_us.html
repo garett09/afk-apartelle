@@ -2,191 +2,34 @@
   <html >
     <head>
     
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>AFK Apartelle</title>
+      
       <!--Angular Routing-->
       <script>document.write('<base href="' + document.location + '" />');</script>
       <script data-semver="1.8.2" src="https://code.angularjs.org/1.8.2/angular.js" data-require="angular.js@1.8.x"></script>
       <script src="https://code.angularjs.org/1.8.2/angular-route.js"></script>
       <!-- Bootstrap CSS -->
-      <link href= "style.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+      <link rel="stylesheet" href="style.css" />
       <!--Bootstrap JS-->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
       <!--Angular JS-->
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
+      <script src = "contact-us_controller.js"></script>
       <!-- Font Awesome -->
       <script
       src="https://kit.fontawesome.com/2ddbad06a5.js"
       crossorigin="anonymous"
       ></script>
-      <script>
-        var app = angular.module('datashare', ['ngRoute']);
-//routing stuff
-app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
-    $routeProvider
-		.when("/", {
-			templateUrl: "Contact_us.html",
-			controller: "ContactCtrl"
-		})
-		.when("/page2", {
-			templateUrl: "Confirmation_Contact_Us.html",
-			controller: "ConfirmationCtrl"
-		})
 
-		;
-}]);
-
-app.controller("ContactCtrl", function($scope, srvShareData, $location) {
-  $scope.fullName;
-
-  $scope.shareMyData = function(Finame, Laname, Elmail, Mesge) {
-
-    if(Finame!= null && Laname!= null && Elmail!= null && Mesge!= null){
-      $scope.fullName=  Finame + " " + Laname;
-      //send scopes to the share data service
-      srvShareData.addData($scope.fullName);
-      //sends the confirmation page route
-      window.location.href = "Confirmation_Contact_Us.html";
-
-    }
-
-  }
-});
-
-app.controller("ConfirmationCtrl", function($scope, srvShareData) {
-  //calling the getter function
-  $scope.sharedData = srvShareData.getData();
-
-});
-
-app.service('srvShareData', function($window) {
-        var obj1;
-        //the setter
-        var addData = function(newObj) {
-            //saves data to the my data
-            var mydata = newObj;
-
-            //turns data to string and save data to storage
-            $window.sessionStorage.setItem(obj1, JSON.stringify(mydata));
-
-
-        };
-        //the getter
-        var getData = function(){
-          //calls the data from storage
-          var mydata = $window.sessionStorage.getItem(obj1);
-
-          //converts data back to object
-        mydata = JSON.parse(mydata);
-
-        return mydata;
-        };
-
-        return {
-            addData: addData,
-            getData: getData
-        };
-    });
-
-      </script>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
-
-/*Header*/
-header .container-fluid{
-    background: #ebcc90;
-    font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: 'Poppins';
-    font-style: italic;
-    font-size: 20px;
-    margin: 0;
-    left: 0;
-    position: relative;
-}
-
-.container-fluid .navbar-expand-lg .navbar-nav .nav-link{
-    padding-right: 3.5rem;
-    padding-left: 1.5rem;
-}
-.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover{
-    color: white;
-}
-.navbar-expand-lg .navbar-nav .nav-link:hover{
-    color:white;
- }
- 
-/*Body*/
-main{
-    padding-top: 3rem;
-}
-.title h1{
-    text-align: center;
-    padding-bottom: 1.75rem;
-}
-input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched
-    {
-        border: 2px solid red;
-    }
-.Animation 
-    {
-        display: inline-block;
-        border-radius: 4px;
-        background-color: #ebcc90;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 16px;
-        padding: 20px;
-        width: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        font-family: 'Poppins';
-    }
-
-.Animation:hover 
-    {
-        display: inline-block;
-        border-radius: 4px;
-        background-color:#d4b982 ;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 20px;
-        padding: 20px;
-        width: 110px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        font-family: 'Poppins';
-    }
-  
-body 
-    {
-        font-family: 'Poppins';
-    }
-
-#Fname, #Lname, #email, #msg
-    {
-        font-size: 16px;
-        font-family: 'Poppins';
-    }
-    
-#Thanks
-	{		
-		padding-top: 5%;
-	}
-      </style>
     </head>
+
+
     <body ng-app="datashare" >
         <header>
             <div class="container-fluid">
@@ -227,56 +70,56 @@ body
         <div class = "title">
 
         </div>
-        <center>
-          <form name="contactform" ng-controller="ContactCtrl" >
-              <div class = "ContactUs Title">
-                  <h2> Contact Us </h2>
-              </div>
-              <table border="0">
-              <!-- Names -->
-              <tr><td><label for "name">Name: </Label></tr></td>
-              <tr><td><input type="text" id="Fname" name="Fname" ng-required= "true" ng-model="Finame" placeholder="Firstname" style="text-transform:capitalize">
-                      <input type="text" id="Lname" name="Lname"ng-required= "true"  ng-model="Laname" placeholder="Lastname" style="text-transform:capitalize"></tr></td>
-              <tr><td>
-              <!-- First name Validation -->
-              <div ng-show = "contactform.Fname.$touched && contactform.Fname.$invalid">
-                <small style =" color:red; display: block; text-align: center;">Please enter your First Name</small>
-              </div>
-              <!-- Second name Validation -->
-              <div ng-show = "contactform.Lname.$touched && contactform.Lname.$invalid">
-                <small style =" color:red; display: block; text-align: center;">Please enter your Last Name</small>
-              </div>
-
-
-              </tr></td>
-              <!-- Email -->
-              <tr><td><label for "email">Email: </Label></tr></td>
-              <tr><td><input type="email" id="email" name="email" ng-required= "true" ng-model="Elmail" placeholder="Enter Email">
-              <!-- Email Validation -->
-                <div ng-show = "contactform.email.$touched && contactform.email.$invalid">
-                  <small style =" color:red; display: block; text-align: center;">Please enter a valid Email</small>
+            <form name="contactform" ng-controller="ContactCtrl" >
+                <div class = "ContactUs Title" >
+                  <center><h2> Contact Us </h2></center>
                 </div>
-              </tr></td>
-              <!-- Message box -->
-              <tr><td><label for "msg">Message:</label></lbl></td></tr>
-              <tr><td><textarea id="msg" name="msg" ng-required= "true" ng-model="Mesge" placeholder="Message" style="width:100%;height:160px;"> </textarea>
-              <!-- Message box Validation -->
-                <div ng-show = "contactform.msg.$touched && contactform.msg.$invalid">
-                  <small style =" color:red; display: block; text-align: center;">Please enter a Message</small>
+                <table border="0">
+                <!-- Names -->
+                <label for "name">Name: </Label>
+                <div class="row">
+                <div class = col-sm-6>
+                <input type="text" id="Fname" name="Fname" ng-required= "true" ng-model="Finame" placeholder="Firstname" style="text-transform:capitalize" class="form-control">
+                  <!-- First name Validation -->
+                <div ng-show = "contactform.Fname.$touched && contactform.Fname.$invalid" >
+                  <small style =" color:red; display: block; text-align: center;">Please enter your First Name</small>
                 </div>
-              </td></tr>
+                </div>
+                <div class = col-sm-6>
+                <input type="text" id="Lname" name="Lname"ng-required= "true"  ng-model="Laname" placeholder="Lastname" style="text-transform:capitalize" class="form-control">
+                <!-- Second name Validation -->
+                <div ng-show = "contactform.Lname.$touched && contactform.Lname.$invalid" >
+                  <small style =" color:red; display: block; text-align: center;">Please enter your Last Name</small>
+                </div>
+                </div>
+                </div>
+  
+                <!-- Email -->
+                <label for "email">Email: </Label>
+                <input type="email" id="email" name="email" ng-required= "true" ng-model="Elmail" placeholder="Enter Email" class="form-control">
+                <!-- Email Validation -->
+                  <div ng-show = "contactform.email.$touched && contactform.email.$invalid" >
+                    <small style =" color:red; display: block; text-align: center;">Please enter a valid Email</small>
+                  </div>
+  
+                <!-- Message box -->
+                <label for "msg">Message:</label></lbl>
+                <textarea id="msg" name="msg" ng-required= "true" ng-model="Mesge" placeholder="Message" style="width:100%;height:160px;" class="form-control"> </textarea>
+                <!-- Message box Validation -->
+  
+                  <div ng-show = "contactform.msg.$touched && contactform.msg.$invalid">
+                    <small style =" color:red; display: block; text-align: center;">Please enter a Message</small>
+                  </div>
+  
+  
+                <tr><td colspan="2" align="right">
+                <!-- Submit Button -->
+                <span><input type="submit" class = "Animation" value="Send" style = "float:right" ng-disabled = "contactform.$invalid" ng-click="shareMyData(Finame, Laname, Elmail, Mesge)" /> </span>
+  
 
-              <tr><td colspan="2" align="right">
-              <!-- Submit Button -->
-              <span><input type="submit" class = "Animation" value="Send" style = "float:right" ng-disabled = "contactform.$invalid" ng-click="shareMyData(Finame, Laname, Elmail, Mesge)" /> </span>
-
-
-               </td></tr>
-
-              </table>
-              </div>
-          </form>
-          </center>
+  
+            </form>
+  
         </div>
     </main>
 
