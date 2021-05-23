@@ -3,11 +3,11 @@ var app = angular.module('datashare', ['ngRoute']);
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider){
     $routeProvider
 		.when("/", {
-			templateUrl: "Contact_us.html",
+			templateUrl: "contactus.html",
 			controller: "ContactCtrl"
 		})
 		.when("/page2", {
-			templateUrl: "Confirmation_Contact_Us.html",
+			templateUrl: "contactusconfirmation.html",
 			controller: "ConfirmationCtrl"
 		})
 
@@ -24,7 +24,7 @@ app.controller("ContactCtrl", function($scope, srvShareData, $location) {
       //send scopes to the share data service
       srvShareData.addData($scope.fullName);
       //sends the confirmation page route
-      window.location.href = "Confirmation_Contact_Us.html";
+      window.location.href = "contactusconfirmation.html";
 
 
   }
