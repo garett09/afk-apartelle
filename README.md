@@ -11,7 +11,7 @@ The AFK Hotel website is maintained by: **Adrian Garett Sian**
 
 ## Changelog | Documentation
 
-#### -On 25 May 2021, the whole website was successfully finsihed thanks to the entire team that worked together day and night to complete the project on time. With this, the wesbite is under beta testing. If ever there are any isseus that came up, it will be fixed within the day. Further testing will also be done today to verify the integrity and correctness of the website.
+- On 25 May 2021, the whole website was successfully finsihed thanks to the entire team that worked together day and night to complete the project on time. With this, the wesbite is under beta testing. If ever there are any isseus that came up, it will be fixed within the day. Further testing will also be done today to verify the integrity and correctness of the website.
 
 - On 24 May 2021, The citation page was finished and merged in the release branch. In addition, the team also solved the problem regarding the navbar not being responsive in the smaller devices as well as mobile phones.
 
