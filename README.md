@@ -11,7 +11,7 @@ The AFK Hotel website is maintained by: **Adrian Garett Sian**
 
 ## Changelog | Documentation
 
-- On 24 May 2021, The citation page was finished and merged in the release branch.
+- On 24 May 2021, The citation page was finished and merged in the release branch. In addition, the team also solved the problem regarding the navbar not being responsive in the smaller devices as well as mobile phones.
 
 - On 23 May 2021, The contact us page was finished with Angular routing included, mobile responsive and fixed errors in the console. The team decided to put up a citation page so that the website is copyright free.
 
