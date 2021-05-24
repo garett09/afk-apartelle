@@ -1,110 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 /*Header*/
-header .container-fluid{
-    background: #ebcc90;
-    font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: 'Poppins';
-    font-style: italic;
-    font-size: 20px;
-    margin: 0;
-    left: 0;
-    position: relative;
+header .container-fluid {
+  background: #ebcc90;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: 20px;
+  margin: 0;
+  left: 0;
+  position: relative;
 }
 
-.container-fluid .navbar-expand-lg .navbar-nav .nav-link{
-    padding-right: 3.5rem;
-    padding-left: 1.5rem;
+.container-fluid .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 3.5rem;
+  padding-left: 1.5rem;
 }
-.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover{
-    color: white;
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover {
+  color: white;
 }
-.navbar-expand-lg .navbar-nav .nav-link:hover{
-    color:white;
- }
- 
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: white;
+}
+
 /*Body*/
-main{
-    padding-top: 3rem;
+main {
+  padding-top: 3rem;
 }
-.title h1{
-    text-align: center;
-    padding-bottom: 1.75rem;
+.title h1 {
+  text-align: center;
+  padding-bottom: 1.75rem;
 }
-input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched
-    {
-        border: 2px solid red;
-    }
-.Animation 
-    {
-        display: inline-block;
-        border-radius: 4px;
-        background-color: #ebcc90;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 16px;
-        padding: 20px;
-        width: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        font-family: 'Poppins';
-    }
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+.Animation {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ebcc90;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Poppins";
+}
 
-.Animation:hover 
-    {
-        display: inline-block;
-        border-radius: 4px;
-        background-color:#d4b982 ;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 20px;
-        padding: 20px;
-        width: 110px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        font-family: 'Poppins';
-    }
-  
-body 
-    {
-        font-family: 'Poppins';
-    }
+.Animation:hover {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d4b982;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Poppins";
+}
 
-#Fname, #Lname, #email, #msg
-    {
-        font-size: 16px;
-        font-family: 'Poppins';
-    }
-    
-#Thanks
-	{		
-		padding-top: 5%;
-	}
-.contact-us{
-    background-color: #d4b982;
-    text-align: center;
-    justify-content: center;
-    padding-right: 2rem;
+.Animation1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ebcc90;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Poppins";
 }
-.contact-us a{
-    color:black;
-    font-family: "Belleza", sans-serif;
-    font-size: 30px;
-    padding-left: 1rem;
-    justify-content: center;
+
+.Animation1:hover {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d4b982;
+  font-weight: bolder;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Poppins";
 }
-i{
-    padding-left: 2rem;
-    font-size: 30px;
-    padding-left: 2rem;
+body {
+  font-family: "Poppins";
+}
+
+#Fname,
+#Lname,
+#email,
+#msg {
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+#Thanks {
+  padding-top: 5%;
+}
+.contact-us {
+  background-color: #d4b982;
+  text-align: center;
+  justify-content: center;
+  padding-right: 2rem;
+}
+.contact-us a {
+  color: black;
+  font-family: "Belleza", sans-serif;
+  font-size: 30px;
+  padding-left: 1rem;
+  justify-content: center;
+}
+i {
+  padding-left: 2rem;
+  font-size: 30px;
+  padding-left: 2rem;
 }
