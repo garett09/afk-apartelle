@@ -1,286 +1,285 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rooms - AFK Hotel</title>
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Bootstrap LINKS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-    <!--angular js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/2ddbad06a5.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="rooms-bg" background="img/BASIC-BG.jpeg">
-    <header>
-      <div class="container-fluid">                  
-        <a href= "index.html"><img src="img/LOGO TRAN.png" alt="LOGO" width="100px" height="100px"></a>
-        <a class = "title-logo" href= "index.html"> AFK Hotel</a>
-  <nav class="navbar navbar-expand-lg navbar-light float-right pt-4">
-     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon pt-3"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarCollapse"> 
-        <ul class="navbar-nav mx-auto">
-           <li class="nav-item active">
-              <a class="nav-link" href="index.html">HOME</a>
-           </li>
-           <li class="nav-item active">
-              <a class="nav-link" href="aboutus.html">ABOUT</a>
-           </li>
-           <li class="nav-item active">
-              <a class="nav-link" href="booking.html">BOOKING</a>
-           </li>
-           <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="rooms.html">Rooms</a>
-                 <a class="dropdown-item" href="facilities.html">Facilities</a>
-                 <a class="dropdown-item" href="events.html">Events</a>
-              </div>
-           </li>
-           <li class="nav-item active">
-              <a class="nav-link" href="contactus.html">CONTACT US</a>
-           </li>
-        </ul>
-        </div>
-  </nav>
-</div>
-</div>
-   </header>
-    <main>
-      <!-- Header (Navbar) END -->
-
-      <!-- PLACE CONTENTS HERE -->
-      <h1 class="regular col-xs-12"><br />REGULAR ROOMS</h1>
-      <br />
-      <!-- CAROUSEL 1 -->
-      <div class="container-carousel">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-interval="2000">
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">BOHOL</h5>
-                <p class="carousel-desc-rooms">1 Queen size (1-2 persons)</p>
-              </div>
-              <img
-                src="img/bohol.jpeg"
-                class="d-block mx-auto"
-                alt="BOHOL"
-                width="70%"
-              />
-            </div>
-            <div class="carousel-item" data-interval="2000">
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">VIGAN</h5>
-                <p class="carousel-desc-rooms">
-                  1 Queen size and 1 Single bed<br />(3 persons)
-                </p>
-              </div>
-              <img
-                src="img/VIGAN.jpeg"
-                class="d-block mx-auto"
-                alt="VIGAN"
-                width="70%"
-              />
-            </div>
-            <div class="carousel-item" data-interval="2000">
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">CEBU</h5>
-                <p class="carousel-desc-rooms">2 Queen size bed (4 persons)</p>
-              </div>
-              <img
-                src="img/cebu.jpeg"
-                class="d-block mx-auto"
-                alt="CEBU"
-                width="70%"
-              />
-            </div>
-          </div>
-          <br />
-          <br />
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <!-- CAROUSEL 2 END -->
-        <h1 class="regular">LUXURY ROOMS</h1>
-        <!-- CAROUSEL 1 -->
-        <div
-          id="carouselExampleCaptions2"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-interval="4000" >
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">SIARGAO</h5>
-                <p class="carousel-desc-rooms">
-                  Deluxe Room - King size bed<br />(1-2 persons)
-                </p>
-              </div>
-              <img
-                src="img/siargao.jpeg"
-                class="d-block mx-auto"
-                alt="SIARGAO"
-                width="70%"
-              />
-            </div>
-            <div class="carousel-item" data-interval="4000">
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">CORON</h5>
-                <p class="carousel-desc-rooms">
-                  Superior Room - With mini kitchen<br />
-                  and 2 Queen size bed (4 persons)
-                </p>
-              </div>
-              <img
-                src="img/coron.jpeg"
-                class="d-block mx-auto"
-                alt="CORON"
-                width="70%"
-              />
-            </div>
-            <div class="carousel-item" data-interval="4000">
-              <div class="carousel-caption">
-                <h5 class="carousel-text-rooms">MANILA</h5>
-                <p class="carousel-desc-rooms">
-                  Penthouse - 3 Bedrooms with<br />kitchen (6-8 persons)
-                </p>
-              </div>
-              <img
-                src="img/manila.jpeg"
-                class="d-block mx-auto"
-                alt="MANILA"
-                width="70%"
-              />
-            </div>
-          </div>
-          <br />
-          <br />
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions2"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions2"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <!-- CAROUSEL 2 END -->
-      </div>
-    </main>
-    <footer>
-      <div class="page-footer col-sm-12 font-small indigo">
-         <div class="container">
-            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-               <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                     <a href="index.html">Home</a>
-                  </h6>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rooms - AFK Hotel</title>
+      <link rel="icon" href="img/icon.png">
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- Bootstrap LINKS -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+         crossorigin="anonymous"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+         crossorigin="anonymous"
+         ></script>
+      <!--angular js-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+      <!-- Font Awesome -->
+      <script
+         src="https://kit.fontawesome.com/2ddbad06a5.js"
+         crossorigin="anonymous"
+         ></script>
+   </head>
+   <body class="rooms-bg" background="img/BASIC-BG.jpeg">
+      <header>
+         <div class="container-fluid">
+            <a href= "index.html"><img src="img/LOGO TRAN.png" alt="LOGO" width="100px" height="100px"></a>
+            <a class = "title-logo" href= "index.html"> AFK Hotel</a>
+            <nav class="navbar navbar-expand-lg navbar-light float-right pt-4">
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+               <span class="navbar-toggler-icon pt-3"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mx-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="aboutus.html">ABOUT</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="booking.html">BOOKING</a>
+                     </li>
+                     <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="rooms.html">Rooms</a>
+                           <a class="dropdown-item" href="facilities.html">Facilities</a>
+                           <a class="dropdown-item" href="events.html">Events</a>
+                        </div>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html">CONTACT US</a>
+                     </li>
+                  </ul>
                </div>
-               <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                     <a href="aboutus.html">About</a>
-                  </h6>
+            </nav>
+         </div>
+         </div>
+      </header>
+      <main>
+         <!-- Header (Navbar) END -->
+         <!-- PLACE CONTENTS HERE -->
+         <h1 class="regular col-xs-12"><br />REGULAR ROOMS</h1>
+         <br />
+         <!-- CAROUSEL 1 -->
+         <div class="container-carousel">
+            <div
+               id="carouselExampleCaptions"
+               class="carousel slide"
+               data-ride="carousel"
+               >
+               <ol class="carousel-indicators">
+                  <li
+                     data-target="#carouselExampleCaptions"
+                     data-slide-to="0"
+                     class="active"
+                     ></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active" data-interval="2000">
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">BOHOL</h5>
+                        <p class="carousel-desc-rooms">1 Queen size (1-2 persons)</p>
+                     </div>
+                     <img
+                        src="img/bohol.jpeg"
+                        class="d-block mx-auto"
+                        alt="BOHOL"
+                        width="70%"
+                        />
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">VIGAN</h5>
+                        <p class="carousel-desc-rooms">
+                           1 Queen size and 1 Single bed<br />(3 persons)
+                        </p>
+                     </div>
+                     <img
+                        src="img/VIGAN.jpeg"
+                        class="d-block mx-auto"
+                        alt="VIGAN"
+                        width="70%"
+                        />
+                  </div>
+                  <div class="carousel-item" data-interval="2000">
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">CEBU</h5>
+                        <p class="carousel-desc-rooms">2 Queen size bed (4 persons)</p>
+                     </div>
+                     <img
+                        src="img/cebu.jpeg"
+                        class="d-block mx-auto"
+                        alt="CEBU"
+                        width="70%"
+                        />
+                  </div>
                </div>
-               <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                     <a href="booking.html">BOOKINGS</a>
-                  </h6>
-               </div>
-               <div class="col-md-2 mb-3">
-                  <h6 class="text-uppercase font-weight-bold">
-                     <a href="contactus.html">CONTACT US</a>
-                  </h6>
-               </div>
+               <br />
+               <br />
+               <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="prev"
+                  >
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a
+                  class="carousel-control-next"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="next"
+                  >
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
             </div>
-            <hr class="rgba-white-light" style="margin: 0 15%;">
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-               <br>
-               <br>
+            <!-- CAROUSEL 2 END -->
+            <h1 class="regular">LUXURY ROOMS</h1>
+            <!-- CAROUSEL 1 -->
+            <div
+               id="carouselExampleCaptions2"
+               class="carousel slide"
+               data-ride="carousel"
+               >
+               <ol class="carousel-indicators">
+                  <li
+                     data-target="#carouselExampleCaptions"
+                     data-slide-to="0"
+                     class="active"
+                     ></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active" data-interval="4000" >
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">SIARGAO</h5>
+                        <p class="carousel-desc-rooms">
+                           Deluxe Room - King size bed<br />(1-2 persons)
+                        </p>
+                     </div>
+                     <img
+                        src="img/siargao.jpeg"
+                        class="d-block mx-auto"
+                        alt="SIARGAO"
+                        width="70%"
+                        />
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">CORON</h5>
+                        <p class="carousel-desc-rooms">
+                           Superior Room - With mini kitchen<br />
+                           and 2 Queen size bed (4 persons)
+                        </p>
+                     </div>
+                     <img
+                        src="img/coron.jpeg"
+                        class="d-block mx-auto"
+                        alt="CORON"
+                        width="70%"
+                        />
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                     <div class="carousel-caption">
+                        <h5 class="carousel-text-rooms">MANILA</h5>
+                        <p class="carousel-desc-rooms">
+                           Penthouse - 3 Bedrooms with<br />kitchen (6-8 persons)
+                        </p>
+                     </div>
+                     <img
+                        src="img/manila.jpeg"
+                        class="d-block mx-auto"
+                        alt="MANILA"
+                        width="70%"
+                        />
+                  </div>
+               </div>
+               <br />
+               <br />
+               <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleCaptions2"
+                  role="button"
+                  data-slide="prev"
+                  >
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a
+                  class="carousel-control-next"
+                  href="#carouselExampleCaptions2"
+                  role="button"
+                  data-slide="next"
+                  >
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
             </div>
-            <div class="row mx-auto">
-               <div class="btn-group-horizontal mx-auto ">
-                  <div class="mx-5 flex-center">
-                     <!-- Facebook -->
-                     <a class="fb-ic" href="https://facebook.com/AFK-Hotel-108336021449130/" target="_blank">
+            <!-- CAROUSEL 2 END -->
+         </div>
+      </main>
+      <footer>
+         <div class="page-footer col-sm-12 font-small indigo">
+            <div class="container">
+               <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html">Home</a>
+                     </h6>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="aboutus.html">About</a>
+                     </h6>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="booking.html">BOOKINGS</a>
+                     </h6>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                     <h6 class="text-uppercase font-weight-bold">
+                        <a href="contactus.html">CONTACT US</a>
+                     </h6>
+                  </div>
+               </div>
+               <hr class="rgba-white-light" style="margin: 0 15%;">
+               <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                  <br>
+                  <br>
+               </div>
+               <div class="row mx-auto">
+                  <div class="btn-group-horizontal mx-auto ">
+                     <div class="mx-5 flex-center">
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://facebook.com/AFK-Hotel-108336021449130/" target="_blank">
                         <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
                         </a>
                         <!-- Twitter -->
@@ -295,20 +294,21 @@
                         <a class="pin-ic" href="afkhotel@gmail.com" target="_blank">
                         <i class="fas fa-envelope fa-lg white-text"></i>
                         </a>
+                     </div>
                   </div>
                </div>
+               <br>
+               <br>
+               <div class = "citation-footer" style="text-align:center; font-family: poppins; font-size: 18px;">
+                  <a href="citation.html" class = "citation-footer"> Citation</a>
+               </div>
+               <!-- Copyright -->
+               <div class="footer-copyright text-center py-3">© 2021 AFK Hotel Developed by Sani's Babies. All Rights
+                  Reserved.
+               </div>
+               <!-- Copyright -->
             </div>
-            <br>
-            <br>
-            <div class = "citation-footer" style="text-align:center; font-family: poppins; font-size: 18px;">
-               <a href="citation.html" class = "citation-footer"> Citation</a>
-            </div>
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2021 AFK Hotel Developed by Sani's Babies. All Rights
-               Reserved.</div>
-            <!-- Copyright -->
          </div>
-      </div>
-   </footer>
-  </body>
+      </footer>
+   </body>
 </html>

@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   box-sizing: border-box;
   margin: 0;
-    overflow-x: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -17,13 +17,13 @@ body {
 
 /*INDEX WEBPAGE*/
 /*HEADER*/
-header a{
+header a {
   text-decoration: none;
-  color:#212529;
+  color: #212529;
 }
-header a:hover{
+header a:hover {
   text-decoration: none;
-  color:#212529
+  color: #212529;
 }
 header .container-fluid {
   background: #ebcc90;
@@ -47,7 +47,6 @@ header .container-fluid {
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: white;
 }
-
 
 /*MAIN*/
 .rounded .mx-auto .d-md-block .img {
@@ -107,10 +106,10 @@ main .carousel-text-rooms2 {
   font-size: 5vw;
   font-family: "Belleza", sans-serif;
   text-shadow: 0 0 9px grey, 0 0 10px grey;
-  color:white;
+  color: white;
 }
 .mx-auto-blockquote1 {
-  color:#212529;
+  color: #212529;
   text-align: center;
   justify-content: center;
 }
@@ -134,7 +133,7 @@ footer .container a:hover {
 
 /*BOOKING WEBPAGE*/
 .title {
-  background:white;
+  background: white;
   font-weight: bold;
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -217,7 +216,7 @@ footer .container5 a {
   color: black;
 }
 footer .container5 a:hover {
-  color:#bf9b30;
+  color: #bf9b30;
   text-decoration: none;
 }
 /*ROOMS WEBPAGE*/
@@ -234,13 +233,13 @@ main .container3 .title-col {
   text-align: center;
   font-family: "Belleza", sans-serif;
   font-size: 40px;
-  color:#B68911;
+  color: #b68911;
 }
 main .container3 .title-col2 {
   text-align: center;
   font-family: "Belleza", sans-serif;
   font-size: 30px;
-  color:#EBCC90;
+  color: #ebcc90;
 }
 main .container3 .text1 {
   justify-content: center;
@@ -268,7 +267,7 @@ footer .container a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.contact-us{
+.contact-us {
   background-color: #d4b982;
 }
 /*ABOUT US WEBPAGE*/
@@ -284,8 +283,8 @@ main .container4 .title-col {
   font-family: "Poppins";
   font-size: 30px;
 }
-.next a{
-  color:#212529;
+.next a {
+  color: #212529;
 }
 
 /*footer*/
@@ -308,8 +307,6 @@ footer .container a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.contact-us{
+.contact-us {
   background-color: #d4b982;
 }
-
-
