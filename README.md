@@ -1,6 +1,6 @@
-# AFK Apartelle by Sani's Babies
+# AFK Hotel by Sani's Babies
 
-Our complete AFK apartelle website maintained by: **Adrian Sian**
+The AFK Hotel website is maintained by: **Adrian Garett Sian**
 
 
 ### The contributions are as follows:
@@ -11,7 +11,9 @@ Our complete AFK apartelle website maintained by: **Adrian Sian**
 
 ## Changelog | Documentation
 
-- On 23 May 2021, The contact us page was finished with Angular routing included, mobile responsive and fixed errors in the console. However, the team encountered that the navigation bar was not responsive.
+- On 24 May 2021, The citation page was finished and merged in the release branch.
+
+- On 23 May 2021, The contact us page was finished with Angular routing included, mobile responsive and fixed errors in the console. The team decided to put up a citation page so that the website is copyright free.
 
 - On 22 May 2021, The contact us page was almost done but encountered some merge error. The page was also made responsive. The issue was sent to the team.
 
