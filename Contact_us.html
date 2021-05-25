@@ -46,43 +46,49 @@
       
     <body ng-app="datashare"background="img/resized-image-Promo (1).jpeg">
       <header>
-        <div class="container-fluid">                  
-          <a href= "index.html"><img src="img/LOGO TRAN.png" alt="LOGO" width="100px" height="100px"></a>
-          <a class = "title-logo" href= "index.html"> AFK Hotel</a>
-    <nav class="navbar navbar-expand-lg navbar-light float-right pt-4">
-       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon pt-3"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarCollapse"> 
-          <ul class="navbar-nav mx-auto">
-             <li class="nav-item active">
-                <a class="nav-link" href="index.html">HOME</a>
-             </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="aboutus.html">ABOUT</a>
-             </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="booking.html">BOOKING</a>
-             </li>
-             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   SERVICES
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="rooms.html">Rooms</a>
-                   <a class="dropdown-item" href="facilities.html">Facilities</a>
-                   <a class="dropdown-item" href="events.html">Events</a>
-                </div>
-             </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="contactus.html">CONTACT US</a>
-             </li>
-          </ul>
-          </div>
-    </nav>
- </div>
-</div>
+        <div class="container-fluid">
+           <div class="row">
+              <div class = "col-sm-6 pl-5">
+                 <a href= "index.html"><img src="img/LOGO TRAN.png" alt="LOGO" width="100px" height="100px"></a>
+                 <a class = "title-logo" href= "index.html"> AFK Hotel</a>
+              </div>
+              <div class="col-sm-6 pt-4 ">
+                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                       <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                       <ul class="navbar-nav mx-auto">
+                          <li class="nav-item active">
+                             <a class="nav-link" href="index.html">HOME</a>
+                          </li>
+                          <li class="nav-item active">
+                             <a class="nav-link" href="aboutus.html">ABOUT</a>
+                          </li>
+                          <li class="nav-item active">
+                             <a class="nav-link" href="booking.html">BOOKING</a>
+                          </li>
+                          <li class="nav-item dropdown active">
+                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SERVICES
+                             </a>
+                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="rooms.html">Rooms</a>
+                                <a class="dropdown-item" href="facilities.html">Facilities</a>
+                                <a class="dropdown-item" href="events.html">Events</a>
+                             </div>
+                          </li>
+                          <li class="nav-item active">
+                             <a class="nav-link" href="Contact_us.html">CONTACT US</a>
+                          </li>
+                       </ul>
+                    </div>
+                 </nav>
+              </div>
+  
+           </div>
+        </div>
      </header>
      <main>
 
@@ -92,80 +98,83 @@
             <form name="contactform" ng-controller="ContactCtrl" >
               <div class = "ContactUs Title" >
                 <center><h2> Contact Us </h2></center>
+              </div>
+              
+              <!-- Names -->
+              <label for "name">Name: </label>
+              <div class="row">
+                <div class = col-sm-6>
+                  <input type="text" class="form-control" id="Fname" name="Fname" ng-required= "true" ng-model="Finame" placeholder="Firstname" style="text-transform:capitalize" >
+
+                  <!-- First name Validation -->
+                  <div ng-show = "contactform.Fname.$touched && contactform.Fname.$invalid" >
+                    <small style =" color:red; display: block; text-align: center;">Please enter your First Name</small>
+                  </div>
                 </div>
+                <div class = col-sm-6>
+                  <input type="text" class="form-control" id="Lname" name="Lname"ng-required= "true"  ng-model="Laname" placeholder="Lastname" style="text-transform:capitalize" >
                 
-                <!-- Names -->
-                <label for "name">Name: </label>
-                <div class="row">
-                  <div class = col-sm-6>
-                    <input type="text" class="form-control" id="Fname" name="Fname" ng-required= "true" ng-model="Finame" placeholder="Firstname" style="text-transform:capitalize" >
-
-                    <!-- First name Validation -->
-                    <div ng-show = "contactform.Fname.$touched && contactform.Fname.$invalid" >
-                      <small style =" color:red; display: block; text-align: center;">Please enter your First Name</small>
-                    </div>
-                  </div>
-                  <div class = col-sm-6>
-                    <input type="text" class="form-control" id="Lname" name="Lname"ng-required= "true"  ng-model="Laname" placeholder="Lastname" style="text-transform:capitalize" >
-                  
-                    <!-- Second name Validation -->
-                    <div ng-show = "contactform.Lname.$touched && contactform.Lname.$invalid" >
-                      <small style =" color:red; display: block; text-align: center;">Please enter your Last Name</small>
-                    </div>
+                  <!-- Second name Validation -->
+                  <div ng-show = "contactform.Lname.$touched && contactform.Lname.$invalid" >
+                    <small style =" color:red; display: block; text-align: center;">Please enter your Last Name</small>
                   </div>
                 </div>
+              </div>
 
-                <!-- Email -->
-                <label for "email">Email: </label>
-                  <input type="email" class="form-control" id="email" name="email" ng-required= "true" ng-model="Elmail" placeholder="Enter Email" >
-
-                  <!-- Email Validation -->
+              <!-- Email -->
+              <label for "email">Email: </label>
+                <input type="email" class="form-control" id="email" name="email" ng-required= "true" ng-model="Elmail" placeholder="Enter Email" >
+                
+                <!-- Email Validation -->
                   <div ng-show = "contactform.email.$touched && contactform.email.$invalid" >
                     <small style =" color:red; display: block; text-align: center;">Please enter a valid Email</small>
                   </div>
 
-                <!-- Message box -->
-                <label for "msg">Message:</label>
-                  <textarea id="msg" name="msg" ng-required= "true" ng-model="Mesge" placeholder="Message" style="width:100%;height:160px;" class="form-control"> </textarea>
-                
-                  <!-- Message box Validation -->
-                  <div ng-show = "contactform.msg.$touched && contactform.msg.$invalid">
-                    <small style =" color:red; display: block; text-align: center;">Please enter a Message</small>
-                  </div>
+              <!-- Message box -->
+              <label for "msg">Message:</label>
+                <textarea id="msg" name="msg" ng-required= "true" ng-model="Mesge" placeholder="Message" style="width:100%;height:160px;" class="form-control"> </textarea>
 
-                <!-- Submit Button -->
-                <input type="submit" class = "Animation" value="Send" style = "float:left" ng-disabled = "contactform.$invalid" ng-click="shareMyData(Finame, Laname, Elmail, Mesge)" /> </button>
+                <!-- Message box Validation -->
+                <div ng-show = "contactform.msg.$touched && contactform.msg.$invalid">
+                  <small style =" color:red; display: block; text-align: center;">Please enter a Message</small>
+                </div>
+
+
+              <!-- Submit Button -->
+              <input type="submit" class = "Animation" value="Send" style = "float:left" ng-disabled = "contactform.$invalid" ng-click="shareMyData(Finame, Laname, Elmail, Mesge)" /> </button>
+
+              
 
             </form>
 
           </div>
 
           <div class =" col-sm-1">
-                    
+                  
           </div>
       
             <div class="col-sm-4 center pt-5">
               <div class = "contact-us">    
                 <div class = "row pt-5">
-                  <div class="location-ic">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <a> Makati City, Metro Manila</a>
-                  </div>
-                </div>
-                <div class = "row">
-                  <div class="phone-ic">
-                    <i class="fas fa-phone-alt"></i>
-                    <a class = "phone"> afk.hotel@gmail.com</a>
-                  </div>
-                </div>
-                <div class = "row">
-                  <div class="email-ic">
-                    <i class="fas fa-envelope"></i>
-                    <a> 09123456789</a>
-                  </div>
+                <div class="location-ic">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <a> Makati City, Metro Manila</a>
                 </div>
               </div>
+              <div class = "row">
+                <div class="phone-ic">
+                  <i class="fas fa-phone-alt"></i>
+                  <a class = "phone"> afk.hotel@gmail.com</a>
+                </div>
+              </div>
+              <div class = "row">
+                <div class="email-ic">
+                  <i class="fas fa-envelope"></i>
+                  <a> 09123456789</a>
+                </div>
+                </div>
             </div>
+          </div>
         </div>
       </div>
       
@@ -234,9 +243,6 @@
 
           <br />
           <br />
-          <div class = "citation-footer" style="text-align:center; font-family: poppins; font-size: 18px;">
-            <a href="citation.html" class = "citation-footer"> Citation</a>
-         </div>
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3">
