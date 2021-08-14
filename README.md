@@ -6,7 +6,7 @@ The AFK Hotel website is maintained by: **Adrian Garett Sian**
 ### The contributions are as follows:
 
 - **The design, logo, and content** are originally made by: _Catherine Bautista, Nikka Piel Francisco, Annie Mae Icban, and Mylene Rose Ong._
-- **HTML and Boostrap** made by _Aaron Karl Mayor and Eduardo Gabriel Nacion._
+- **HTML and Bootstrap** made by _Aaron Karl Mayor and Eduardo Gabriel Nacion._
 - **Javascript, AngularJS, and jQuery** includes form validation, textbox, data binding, data handling, and prompts are made by _Kyle Bryan Ong, Carlos Miguel Pineda, Sean Harris Bautista, Karlo Tuazon, Rhovic Christopher Cabugao and, Adrian Garett Sian._
 
 ## Changelog | Documentation
