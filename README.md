@@ -30,7 +30,7 @@ The AFK Hotel website is maintained by: **Adrian Garett Sian**
 - On 15 May 2021, the group decided to remove PHP as the group cannot do anything about it thus, all members of the PHP team moved to AngularJS. It is also possible to bind the data in AngularJS thus not needing the PHP programming language. Also, team members _Nikka Francisco, Annie Icban, Catherine Bautista, and Mylene Ong_ finished the design and layout of the page. The design has been submitted to the developing team which consists of _Sean Bautista, Adrian Sian, Eduardo Nacion, Aaron Mayor, Carlos Pineda, Karlo Tuazon, and Kyle Ong._
 
 - On 14 May 2021, the page was successfully deployed into the Github pages. All checks have been passed to verify the integrity and the correctness of the code. Also, the [`issues`] tab
-has been established if the users have any issues while using the website. In addition, Github automation was added. if ever a collaborator made pull requests or issues for the first time
+has been established if the users have any issues while using the website. In addition, Github automation was added. if ever a collaborator made pull requests or issues for the first time,
 they will be greeted by a message. Lastly, another environment was added to accommodate PHP file types.
 
 - On 13 May 2021, the entire structure of the website has been established. This includes bootstrap tests and HTML layouting
